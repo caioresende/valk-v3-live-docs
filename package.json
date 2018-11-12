@@ -28,7 +28,7 @@
     "css-main": "npm-run-all css-lint css-compile-main css-prefix-main css-minify-main css-copy",
     "css-docs": "npm-run-all css-compile-docs css-prefix-docs css-minify-docs",
     "css-compile": "npm-run-all --parallel css-compile-*",
-    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap.scss dist/css/bootstrap.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid.scss dist/css/bootstrap-grid.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot.scss dist/css/bootstrap-reboot.css && npm run css-copy",
+    "css-compile-main": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/valkyrie.scss dist/css/bootstrap.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-grid.scss dist/css/bootstrap-grid.css && node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/bootstrap-reboot.scss dist/css/bootstrap-reboot.css && npm run css-copy",
     "css-compile-docs": "cross-env-shell node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 site/docs/$npm_package_version_short/assets/scss/docs.scss site/docs/$npm_package_version_short/assets/css/docs.min.css",
     "css-lint": "npm-run-all --parallel css-lint-*",
     "css-lint-main": "stylelint --syntax scss \"scss/**/*.scss\"",
@@ -85,7 +85,7 @@
     "watch-js-docs": "nodemon --watch \"site/docs/**/assets/js/src/\" --ext js --exec \"npm run js-docs\""
   },
   "style": "dist/css/bootstrap.css",
-  "sass": "scss/bootstrap.scss",
+  "sass": "scss/valkyrie.scss",
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
@@ -95,7 +95,9 @@
     "url": "https://github.com/twbs/bootstrap/issues"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
   "peerDependencies": {
     "jquery": "1.9.1 - 3",
     "popper.js": "^1.14.4"
