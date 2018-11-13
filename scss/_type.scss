@@ -8,9 +8,18 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: $headings-margin-bottom;
   font-family: $headings-font-family;
-  font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
+}
+
+h1, h2,
+.h1, .h2 {
+  font-weight: $headings-font-weight-light;
+}
+
+h3, h4, h5, h6,
+.h3, .h4, .h5, .h6 {
+  font-weight: $headings-font-weight;
 }
 
 h1, .h1 { font-size: $h1-font-size; }
