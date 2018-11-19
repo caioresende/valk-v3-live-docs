@@ -426,8 +426,15 @@ hr {
 
 small,
 .small {
-  font-size: 80%;
+  font-size: 0.929em;
+  font-weight: 300;
+}
+
+.extra-small, .tag {
+  font-size: 0.786em;
   font-weight: 400;
+  color: #6c6c6c;
+  text-transform: uppercase;
 }
 
 mark,
@@ -459,6 +466,10 @@ mark,
   text-transform: uppercase;
 }
 
+.tag {
+  font-weight: 700;
+}
+
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.09375rem;
@@ -466,7 +477,7 @@ mark,
 
 .blockquote-footer {
   display: block;
-  font-size: 80%;
+  font-size: 0.929em;
   color: #6c757d;
 }
 
@@ -2063,7 +2074,7 @@ textarea.form-control {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.929em;
   color: #28a745;
 }
 
@@ -2186,7 +2197,7 @@ textarea.form-control {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 80%;
+  font-size: 0.929em;
   color: #dc3545;
 }
 
