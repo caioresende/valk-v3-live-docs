@@ -79,6 +79,21 @@ small,
   font-weight: $font-weight-light;
 }
 
+.small-light {
+  font-weight: $font-weight-light;
+  color: $grey;
+}
+
+.small-regular {
+  font-weight: $font-weight-normal;
+  color: $grey;
+}
+
+.small-medium {
+  font-weight: $font-weight-medium;
+  color: $black;
+}
+
 .extra-small {
   font-size: $extra-small-font-size;
   font-weight: $font-weight-normal;
