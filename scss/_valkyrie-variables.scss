@@ -17,6 +17,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #333 !default;
+$grey:     #6c6c6c !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -311,7 +312,10 @@ $display-line-height:         $headings-line-height !default;
 $lead-font-size:              ($font-size-base * 1.25) !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             80% !default;
+$small-font-size:             .929em !default; // 13px
+
+$extra-small-font-size:       .786em !default; // 11px
+$extra-small-font-case:       uppercase !default;
 
 $text-muted:                  $gray-600 !default;
 
