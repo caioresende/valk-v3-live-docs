@@ -430,6 +430,21 @@ small,
   font-weight: 300;
 }
 
+.small-light {
+  font-weight: 300;
+  color: #6c6c6c;
+}
+
+.small-regular {
+  font-weight: 400;
+  color: #6c6c6c;
+}
+
+.small-medium {
+  font-weight: 500;
+  color: #333;
+}
+
 .extra-small, .tag {
   font-size: 0.786em;
   font-weight: 400;
