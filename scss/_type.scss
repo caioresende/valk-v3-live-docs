@@ -76,7 +76,14 @@ hr {
 small,
 .small {
   font-size: $small-font-size;
+  font-weight: $font-weight-light;
+}
+
+.extra-small {
+  font-size: $extra-small-font-size;
   font-weight: $font-weight-normal;
+  color: $grey;
+  text-transform: $extra-small-font-case;
 }
 
 mark,
@@ -115,6 +122,12 @@ mark,
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
+}
+
+// Tags
+.tag {
+  @extend .extra-small;
+  font-weight: $font-weight-bold;
 }
 
 // Blockquotes
