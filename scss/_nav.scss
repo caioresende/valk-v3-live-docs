@@ -32,6 +32,8 @@
 //
 
 .nav-tabs {
+  width: 100%; //hardcoded width
+  height: 50px; //hardcoded height
   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
