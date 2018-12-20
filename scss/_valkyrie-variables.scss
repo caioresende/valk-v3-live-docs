@@ -17,7 +17,7 @@ $gray-700:      #495057 !default;
 $gray-800:      #343a40 !default;
 $gray-900:      #212529 !default;
 $black:         #333 !default;
-$grey:          #6c6c6c !default;
+$symp-gray-600: #6c6c6c !default;
 $symp-gray-400: #d5d5d5 !default;
 
 $grays: () !default;
@@ -688,17 +688,20 @@ $zindex-tooltip:                    1070 !default;
 
 // Navs
 
-$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-y:                .85rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-disabled-color:           $gray-600 !default;
+$nav-tabs-link-color:               $symp-gray-600 !default;
 
 $nav-tabs-border-color:             $symp-gray-400 !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-color:               $symp-gray-600 !default;
+$nav-tabs-link-active-color:        $black !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-border-width: $border-width * 2 !default;
+$nav-tabs-link-active-border-color: $blue !default;
 
 $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
