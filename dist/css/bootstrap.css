@@ -21,10 +21,10 @@
   --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
+  --breakpoint-sm: 1px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-xl: 993px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -542,7 +542,7 @@ pre code {
   margin-left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .container {
     max-width: 540px;
   }
@@ -560,7 +560,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .container {
     max-width: 1140px;
   }
@@ -812,7 +812,7 @@ pre code {
   margin-left: 91.666667%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1328,7 +1328,7 @@ pre code {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1786,7 +1786,7 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 0.98px) {
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -1825,7 +1825,7 @@ pre code {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 992.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -2309,7 +2309,7 @@ textarea.form-control {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .form-inline label {
     display: -ms-flexbox;
     display: flex;
@@ -3072,7 +3072,7 @@ input[type="button"].btn-block {
   left: auto;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .dropdown-menu-sm-right {
     right: 0;
     left: auto;
@@ -3093,7 +3093,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .dropdown-menu-xl-right {
     right: 0;
     left: auto;
@@ -3105,7 +3105,7 @@ input[type="button"].btn-block {
   left: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .dropdown-menu-sm-left {
     right: auto;
     left: 0;
@@ -3126,7 +3126,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .dropdown-menu-xl-left {
     right: auto;
     left: 0;
@@ -4193,7 +4193,7 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 0.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
     padding-right: 0;
@@ -4201,7 +4201,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .navbar-expand-sm {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4319,7 +4319,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 992.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
@@ -4327,7 +4327,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .navbar-expand-xl {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -4632,7 +4632,7 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .card-deck {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -4663,7 +4663,7 @@ input[type="button"].btn-block {
   margin-bottom: 15px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .card-group {
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
@@ -4729,7 +4729,7 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -5022,7 +5022,7 @@ a.badge-dark:hover, a.badge-dark:focus {
   border-radius: 0.3rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .jumbotron {
     padding: 4rem 2rem;
   }
@@ -5644,7 +5644,7 @@ a.close.disabled {
   overflow: scroll;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .modal-dialog {
     max-width: 500px;
     margin: 1.75rem auto;
@@ -5667,7 +5667,7 @@ a.close.disabled {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .modal-xl {
     max-width: 1140px;
   }
@@ -6440,7 +6440,7 @@ button.bg-dark:focus {
   display: inline-flex !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .d-sm-none {
     display: none !important;
   }
@@ -6536,7 +6536,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .d-xl-none {
     display: none !important;
   }
@@ -6813,7 +6813,7 @@ button.bg-dark:focus {
   align-self: stretch !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .flex-sm-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7230,7 +7230,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7381,7 +7381,7 @@ button.bg-dark:focus {
   float: none !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .float-sm-left {
     float: left !important;
   }
@@ -7417,7 +7417,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .float-xl-left {
     float: left !important;
   }
@@ -8015,7 +8015,7 @@ button.bg-dark:focus {
   margin-left: auto !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .m-sm-0 {
     margin: 0 !important;
   }
@@ -9050,7 +9050,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .m-xl-0 {
     margin: 0 !important;
   }
@@ -9429,7 +9429,7 @@ button.bg-dark:focus {
   text-align: center !important;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 1px) {
   .text-sm-left {
     text-align: left !important;
   }
@@ -9465,7 +9465,7 @@ button.bg-dark:focus {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 993px) {
   .text-xl-left {
     text-align: left !important;
   }
