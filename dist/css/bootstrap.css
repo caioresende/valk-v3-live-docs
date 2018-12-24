@@ -4071,7 +4071,6 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link {
   font-weight: 500;
   color: #6c6c6c;
-  border: 1px solid transparent;
   /*
     @include border-top-radius($nav-tabs-border-radius);
 
