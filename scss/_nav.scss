@@ -32,8 +32,8 @@
 //
 
 .nav-tabs {
-  width: 100%; //hardcoded width
-  height: 50px; //hardcoded height
+  width: 100%;
+  height: $nav-tabs-link-height;
   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
@@ -60,6 +60,7 @@
   }
 
   .nav-link.active {
+    height: $nav-tabs-link-active-height;
     color: $nav-tabs-link-active-color;
     border-bottom: $nav-tabs-link-active-border-width solid $nav-tabs-link-active-border-color;
   }
