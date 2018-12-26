@@ -99,19 +99,19 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
     </tr>
     <tr>
       <th class="text-nowrap" scope="row"># of columns</th>
-      <td colspan="5">12</td>
+      <td colspan="3">12</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Gutter width</th>
-      <td colspan="5">30px (15px on each side of a column)</td>
+      <td colspan="3">30px (15px on each side of a column)</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Nestable</th>
-      <td colspan="5">Yes</td>
+      <td colspan="3">Yes</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Column ordering</th>
-      <td colspan="5">Yes</td>
+      <td colspan="3">Yes</td>
     </tr>
   </tbody>
 </table>
