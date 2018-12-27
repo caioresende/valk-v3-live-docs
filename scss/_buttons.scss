@@ -6,6 +6,7 @@
 
 .btn {
   display: inline-block;
+  min-width: $btn-primary-min-width;
   font-weight: $btn-font-weight;
   color: $body-color;
   text-align: center;
@@ -30,7 +31,9 @@
   // Disabled comes first so active can properly restyle
   &.disabled,
   &:disabled {
-    opacity: $btn-disabled-opacity;
+    color: #aaa;
+    background: #ececec;
+    border: 1px solid #ccc;
     @include box-shadow(none);
   }
 
@@ -99,6 +102,24 @@ fieldset:disabled a.btn {
     pointer-events: none;
   }
 
+  &.secondary-link {
+    color: #6c6c6c;
+
+    &:hover,
+    &:focus {
+      color: #0056b3;
+    }
+  }
+
+  &.danger-link {
+    color: #bf3e24;
+
+    &:hover,
+    &:focus {
+      color: #bf3e24;
+    }
+  }
+
   // No need for an active state here
 }
 
@@ -112,6 +133,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-sm {
+  min-width: $btn-primary-sm-min-width;
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm, $btn-border-radius-sm);
 }
 
@@ -136,5 +158,35 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+//
+// Custom desgined button
+//
+
+.btn-secondary {
+  color: #6c6c6c;
+  background: $white;
+  border: 1px solid #bbb;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &.hover {
+    @include button-variant($white, #999999, $hover-background: darken($white, 0%), $hover-border: darken(#999999, 0%), $active-background: darken(#f5f5f5, 0%), $active-border: darken(#999999, 0%));
+  }
+}
+
+.btn-alt-secondary {
+  color: $blue;
+  background: $white;
+  border: 1px solid $blue;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &.hover {
+    @include button-variant($white, $blue, $hover-background: darken($blue, 0%), $hover-border: darken($blue, 0%), $active-background: darken($blue, 0%), $active-border: darken($blue, 0%));
   }
 }
