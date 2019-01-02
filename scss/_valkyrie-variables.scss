@@ -20,8 +20,8 @@ $black:    #000 !default;
 
 
 //symp colors
-$symp-body-bg:            #f5f5f5 !default;
-$symp-card-border-color:  #ececec !default;
+$symp-body-bg:                                    #f5f5f5 !default;
+$symp-card-border-color:                          #ececec !default;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -742,6 +742,22 @@ $navbar-light-brand-color:                $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:          $navbar-light-active-color !default;
 $navbar-dark-brand-color:                 $navbar-dark-active-color !default;
 $navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;
+
+
+//Top Nav Bar
+
+$top-navbar-height:                               60px !default;
+$top-navbar-logo-width:                           200px !default;
+$top-navbar-search-input-height:                  30px !default;
+$top-navbar-search-input-width:                   300px !default;
+$top-navbar-search-border-radius:                 3px !default;
+$top-navbar-search-light-bg-color:                $white !default;
+$top-navbar-search-dark-bg-color:                 rgba($white, .3) !default;
+$top-navbar-search-dark-icon-color:               rgba($black, .5) !default;
+$top-navbar-search-light-icon-color:            #aaa !default;
+$top-navbar-search-light-icon-color-focused:    #6c6c6c !default;
+$top-navbar-search-light-border-color:          #cacaca !default;
+$top-navbar-search-light-border-color-focused:  #999 !default;
 
 
 // Pagination

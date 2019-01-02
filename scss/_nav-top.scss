@@ -1,0 +1,42 @@
+.nav-top {
+
+  .nav-top-search {
+    width: $top-navbar-search-input-width;
+    height: $top-navbar-search-input-height;
+    @include border-radius($top-navbar-search-border-radius);
+
+    .search-light {
+      background: $top-navbar-search-light-bg-color;
+
+      &.focused {
+        border: solid $border-width $top-navbar-search-light-border-color-focused;
+      }
+    }
+
+    .search-light-icon {
+      color: $top-navbar-search-light-icon-color;
+
+      &.focused {
+        color: $top-navbar-search-light-icon-color-focused;
+      }
+    }
+
+    .search-dark {
+      background: $top-navbar-search-dark-bg-color;
+    }
+
+    .search-dark-icon {
+      color: $top-navbar-search-dark-icon-color;
+
+      &.focused {
+        color: $top-navbar-search-light-icon-color-focused;
+      }
+
+    }
+  }
+
+  .nav-top-logo {
+    width: $top-navbar-height;
+    height: $top-navbar-logo-width;
+  }
+}
