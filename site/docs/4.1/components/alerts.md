@@ -10,6 +10,18 @@ toc: true
 
 Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight **required** contextual classes (e.g., `.alert-success`). For inline dismissal, use the [alerts jQuery plugin](#dismissing).
 
+<div class="alert toast alert-danger" role="alert">
+  <i class="fa fa-exclamation-circle"></i>Error message toast.<a href="javascript:;">Action</a>
+</div>
+<br/>
+<div class="alert toast alert-success" role="alert">
+  <i class="fa fa-check"></i>Your application has been submitted.<a href="javascript:;">Undo</a>
+</div>
+<br/>
+<div class="alert toast alert-neutral" role="alert">
+  Your reservation has been cancelled.<a href="javascript:;">Undo</a>
+</div>
+
 {% capture example %}
 {% for color in site.data.theme-colors %}
 <div class="alert alert-{{ color.name }}" role="alert">

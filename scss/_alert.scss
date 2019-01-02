@@ -8,6 +8,31 @@
   margin-bottom: $alert-margin-bottom;
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
+  &.toast {
+    display: inline-block;
+    padding: $alert-toast-padding-y $alert-toast-padding-x;
+    font-size: 14px;
+    font-weight: $headings-font-weight;
+    line-height: initial;
+    border-radius: $alert-toast-border-radius;
+    &.alert-danger {
+      @include alert-variant(#bf3e24, #bf3e24, $white);
+    }
+    &.alert-success {
+      @include alert-variant(#297848, #297848, $white);
+    }
+    &.alert-neutral {
+      @include alert-variant(#555555, #555555, $white);
+    }
+    .fa {
+      margin-right: $alert-toast-padding-y;
+    }
+    a {
+      margin-left: 50px;
+      color: $white;
+      text-decoration: underline;
+    }
+  }
 }
 
 // Headings for larger alerts
