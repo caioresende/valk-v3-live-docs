@@ -5043,7 +5043,7 @@ a.badge-dark:hover, a.badge-dark:focus {
   border-radius: 0.25rem;
 }
 
-.alert.toast {
+.toast {
   display: inline-block;
   padding: 10px 20px;
   font-size: 14px;
@@ -5052,53 +5052,53 @@ a.badge-dark:hover, a.badge-dark:focus {
   border-radius: 0.3125rem;
 }
 
-.alert.toast.alert-danger {
+.toast.alert-danger {
   color: #fff;
   background-color: #bf3e24;
   border-color: #bf3e24;
 }
 
-.alert.toast.alert-danger hr {
+.toast.alert-danger hr {
   border-top-color: #aa3720;
 }
 
-.alert.toast.alert-danger .alert-link {
+.toast.alert-danger .alert-link {
   color: #e6e6e6;
 }
 
-.alert.toast.alert-success {
+.toast.alert-success {
   color: #fff;
   background-color: #297848;
   border-color: #297848;
 }
 
-.alert.toast.alert-success hr {
+.toast.alert-success hr {
   border-top-color: #23653d;
 }
 
-.alert.toast.alert-success .alert-link {
+.toast.alert-success .alert-link {
   color: #e6e6e6;
 }
 
-.alert.toast.alert-neutral {
+.toast.alert-neutral {
   color: #fff;
   background-color: #555555;
   border-color: #555555;
 }
 
-.alert.toast.alert-neutral hr {
+.toast.alert-neutral hr {
   border-top-color: #484848;
 }
 
-.alert.toast.alert-neutral .alert-link {
+.toast.alert-neutral .alert-link {
   color: #e6e6e6;
 }
 
-.alert.toast .fa {
+.toast .fa {
   margin-right: 10px;
 }
 
-.alert.toast a {
+.toast a {
   margin-left: 50px;
   color: #fff;
   text-decoration: underline;
