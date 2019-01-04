@@ -5045,6 +5045,67 @@ a.badge-dark:hover, a.badge-dark:focus {
   border-radius: 0.25rem;
 }
 
+.toast {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: initial;
+  border-radius: 0.3125rem;
+}
+
+.toast.alert-danger {
+  color: #fff;
+  background-color: #bf3e24;
+  border-color: #bf3e24;
+}
+
+.toast.alert-danger hr {
+  border-top-color: #aa3720;
+}
+
+.toast.alert-danger .alert-link {
+  color: #e6e6e6;
+}
+
+.toast.alert-success {
+  color: #fff;
+  background-color: #297848;
+  border-color: #297848;
+}
+
+.toast.alert-success hr {
+  border-top-color: #23653d;
+}
+
+.toast.alert-success .alert-link {
+  color: #e6e6e6;
+}
+
+.toast.alert-neutral {
+  color: #fff;
+  background-color: #555555;
+  border-color: #555555;
+}
+
+.toast.alert-neutral hr {
+  border-top-color: #484848;
+}
+
+.toast.alert-neutral .alert-link {
+  color: #e6e6e6;
+}
+
+.toast .fa {
+  margin-right: 10px;
+}
+
+.toast a {
+  margin-left: 50px;
+  color: #fff;
+  text-decoration: underline;
+}
+
 .alert-heading {
   color: inherit;
 }
