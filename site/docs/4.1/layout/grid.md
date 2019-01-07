@@ -58,13 +58,13 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
   <thead>
     <tr>
       <th></th>
-      <th class="text-center">
+      <!-- <th class="text-center">
         Extra small<br>
-        <small>&lt;576px</small>
-      </th>
+        <small>&lt;768px</small>
+      </th> -->
       <th class="text-center">
         Small<br>
-        <small>&ge;576px</small>
+        <small>&lt;768px</small>
       </th>
       <th class="text-center">
         Medium<br>
@@ -74,44 +74,44 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
         Large<br>
         <small>&ge;992px</small>
       </th>
-      <th class="text-center">
+      <!-- <th class="text-center">
         Extra large<br>
         <small>&ge;1200px</small>
-      </th>
+      </th> -->
     </tr>
   </thead>
   <tbody>
     <tr>
       <th class="text-nowrap" scope="row">Max container width</th>
-      <td>None (auto)</td>
+      <!-- <td>None (auto)</td> -->
       <td>540px</td>
       <td>720px</td>
       <td>960px</td>
-      <td>1140px</td>
+      <!-- <td>1140px</td> -->
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Class prefix</th>
-      <td><code>.col-</code></td>
+      <!-- <td><code>.col-</code></td> -->
       <td><code>.col-sm-</code></td>
       <td><code>.col-md-</code></td>
       <td><code>.col-lg-</code></td>
-      <td><code>.col-xl-</code></td>
+      <!-- <td><code>.col-xl-</code></td> -->
     </tr>
     <tr>
       <th class="text-nowrap" scope="row"># of columns</th>
-      <td colspan="5">12</td>
+      <td colspan="3">12</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Gutter width</th>
-      <td colspan="5">30px (15px on each side of a column)</td>
+      <td colspan="3">30px (15px on each side of a column)</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Nestable</th>
-      <td colspan="5">Yes</td>
+      <td colspan="3">Yes</td>
     </tr>
     <tr>
       <th class="text-nowrap" scope="row">Column ordering</th>
-      <td colspan="5">Yes</td>
+      <td colspan="3">Yes</td>
     </tr>
   </tbody>
 </table>
