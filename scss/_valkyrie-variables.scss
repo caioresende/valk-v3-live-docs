@@ -130,17 +130,21 @@ $enable-validation-icons:                     true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: 1.25rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .25),     //5px
+    2: ($spacer * .5),      //10px
+    3: ($spacer * .6),      //12px
+    4: ($spacer * .75),     //15px
+    5: $spacer,             //20px
+    6: ($spacer * 1.5),     //30px
+    7: ($spacer * 2),       //40px
+    8: ($spacer * 2.5),     //50px
+    9: ($spacer * 3)        //60px
   ),
   $spacers
 );
@@ -789,7 +793,7 @@ $jumbotron-bg:                      $gray-200 !default;
 
 $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
-$card-padding:                      1.429em !default;
+$card-padding:                      $spacer !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                .35rem !default;
 $card-border-color:                 $symp-card-border-color !default;
@@ -861,11 +865,11 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default
 
 // Badges
 
-$badge-font-size:                   75% !default;
+$badge-font-size:                   11px !default;
 $badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
-$badge-padding-x:                   .4em !default;
-$badge-border-radius:               $border-radius !default;
+$badge-padding-y:                   0 !default;
+$badge-padding-x:                   .3125rem !default;
+$badge-border-radius:               2px !default;
 
 $badge-pill-padding-x:              .6em !default;
 // Use a higher than normal value to ensure completely rounded edges when

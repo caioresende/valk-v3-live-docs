@@ -8,8 +8,9 @@
   padding: $badge-padding-y $badge-padding-x;
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
-  line-height: 1;
+  line-height: inherit;
   text-align: center;
+  text-transform: uppercase;
   white-space: nowrap;
   vertical-align: baseline;
   @include border-radius($badge-border-radius);
@@ -50,4 +51,11 @@
   .badge-#{$color} {
     @include badge-variant($value);
   }
+}
+
+.badge-primary {
+  @include badge-variant(#7e7e7e);
+}
+.badge-secondary {
+  @include badge-variant(#D6820E);
 }

@@ -10,6 +10,9 @@ toc: true
 
 Badges scale to match the size of the immediate parent element by using relative font sizing and `em` units.
 
+<span class="badge badge-primary">Default</span>
+<span class="badge badge-secondary">Pending</span>
+
 {% capture example %}
 <h1>Example heading <span class="badge badge-secondary">New</span></h1>
 <h2>Example heading <span class="badge badge-secondary">New</span></h2>
