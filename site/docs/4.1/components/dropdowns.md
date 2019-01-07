@@ -26,7 +26,7 @@ However, Bootstrap does add built-in support for most standard keyboard menu int
 
 Wrap the dropdown's toggle (your button or link) and the dropdown menu within `.dropdown`, or another element that declares `position: relative;`. Dropdowns can be triggered from `<a>` or `<button>` elements to better fit your potential needs.
 
-### Single button
+### Single button - Updated design
 
 Any single `.btn` can be turned into a dropdown toggle with some markup changes. Here's how you can put them to work with either `<button>` elements:
 
@@ -36,9 +36,13 @@ Any single `.btn` can be turned into a dropdown toggle with some markup changes.
     Dropdown button
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
+    <h6 class="dropdown-header">Title</h6>
+    <a class="dropdown-item" href="#">Slovenia</a>
+    <a class="dropdown-item" href="#">South Africa</a>
+    <a class="dropdown-item" href="#">Russian Federation</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">Liberia</a>
+    <a class="dropdown-item" href="#">Los Angels</a>
   </div>
 </div>
 {% endcapture %}
