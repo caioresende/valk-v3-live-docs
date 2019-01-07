@@ -81,12 +81,12 @@ small,
 
 .small-light {
   font-weight: $font-weight-light;
-  color: $grey;
+  color: $symp-gray-600;
 }
 
 .small-regular {
   font-weight: $font-weight-normal;
-  color: $grey;
+  color: $symp-gray-600;
 }
 
 .small-medium {
@@ -97,7 +97,7 @@ small,
 .extra-small {
   font-size: $extra-small-font-size;
   font-weight: $font-weight-normal;
-  color: $grey;
+  color: $symp-gray-600;
   text-transform: $extra-small-font-case;
 }
 
