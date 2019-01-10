@@ -5,6 +5,11 @@
     height: $top-navbar-search-input-height;
     @include border-radius($top-navbar-search-border-radius);
 
+    .nav-top-search-icon {
+      width: $top-navbar-search-icon-width;
+      font-size: $top-navbar-search-icon-size;
+    }
+
     .search-light {
       background: $top-navbar-search-light-bg-color;
 
@@ -46,18 +51,18 @@
     color: $top-navbar-item-color;
     background: $top-navbar-item-bg-color;
 
-    .avatar {
+    .nav-top-avatar {
       height: $top-navbar-item-height;
       border: solid  $top-navbar-item-border-width $top-navbar-item-border-color;
     }
 
-    .icon {
+    .nav-top-icon {
       font-size: $top-navbar-item-icon-size;
     }
 
     .no-avatar,
     .with-notification,
-    .icon {
+    .nav-top-icon {
       height: $top-navbar-item-height + $top-navbar-item-border-width;
     }
 
