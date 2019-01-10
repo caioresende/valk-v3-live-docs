@@ -40,29 +40,29 @@
     height: $top-navbar-logo-width;
   }
 
-  .nav-top-badge {
-    font-size: $top-navbar-badge-font-size;
-    font-weight: $top-navbar-badge-font-weight;
-    color: $top-navbar-badge-color;
-    background: $top-navbar-badge-bg-color;
+  .nav-top-item {
+    font-size: $top-navbar-item-font-size;
+    font-weight: $top-navbar-item-font-weight;
+    color: $top-navbar-item-color;
+    background: $top-navbar-item-bg-color;
 
     .avatar {
-      height: $top-navbar-badge-height;
-      border: solid  $top-navbar-badge-border-width $top-navbar-badge-border-color;
+      height: $top-navbar-item-height;
+      border: solid  $top-navbar-item-border-width $top-navbar-item-border-color;
     }
 
     .icon {
-      font-size: $top-navbar-badge-icon-size;
+      font-size: $top-navbar-item-icon-size;
     }
 
     .no-avatar,
     .with-notification,
     .icon {
-      height: $top-navbar-badge-height + $top-navbar-badge-border-width;
+      height: $top-navbar-item-height + $top-navbar-item-border-width;
     }
 
     &:hover {
-      color: $top-navbar-badge-color-hover;
+      color: $top-navbar-item-color-hover;
     }
 
   }
