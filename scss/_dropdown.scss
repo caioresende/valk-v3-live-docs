@@ -20,9 +20,10 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: $dropdown-min-width;
+  max-width: $dropdown-max-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
-  font-size: $font-size-base; // Redeclare because nesting can cause inheritance issues
+  font-size: 13px; // Redeclare because nesting can cause inheritance issues
   color: $body-color;
   text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
   list-style: none;
@@ -137,7 +138,7 @@
   border: 0; // For `<button>`s
 
   @include hover-focus {
-    color: $dropdown-link-hover-color;
+    color: $dropdown-link-color;
     text-decoration: none;
     @include gradient-bg($dropdown-link-hover-bg);
   }
@@ -168,8 +169,8 @@
 // Dropdown section headers
 .dropdown-header {
   display: block;
-  padding: $dropdown-padding-y $dropdown-item-padding-x;
-  margin-bottom: 0; // for use with heading elements
+  padding: $dropdown-header-padding-y $dropdown-item-padding-x;
+  margin-bottom: 15px; // for use with heading elements
   font-size: $font-size-sm;
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a

@@ -6,17 +6,19 @@
 
 // Color system
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black:    #000 !default;
+$white:         #fff !default;
+$gray-100:      #f8f9fa !default;
+$gray-200:      #e9ecef !default;
+$gray-300:      #dee2e6 !default;
+$gray-400:      #ced4da !default;
+$gray-500:      #adb5bd !default;
+$gray-600:      #6c757d !default;
+$gray-700:      #495057 !default;
+$gray-800:      #343a40 !default;
+$gray-900:      #212529 !default;
+$black:         #333 !default;
+$symp-gray-600: #6c6c6c !default;
+$symp-gray-400: #d5d5d5 !default;
 
 
 //symp colors
@@ -130,17 +132,21 @@ $enable-validation-icons:                     true !default;
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
-$spacer: 1rem !default;
+$spacer: 1.25rem !default;
 $spacers: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .25),     //5px
+    2: ($spacer * .5),      //10px
+    3: ($spacer * .6),      //12px
+    4: ($spacer * .75),     //15px
+    5: $spacer,             //20px
+    6: ($spacer * 1.5),     //30px
+    7: ($spacer * 2),       //40px
+    8: ($spacer * 2.5),     //50px
+    9: ($spacer * 3)        //60px
   ),
   $spacers
 );
@@ -270,27 +276,28 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      Roboto, "Segoe UI", "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .875rem !default; // 14px // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 $font-size-sm:                ($font-size-base * .875) !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
+$h1-font-size:                $font-size-base * 2 !default; // 28px
+$h2-font-size:                $font-size-base * 1.571 !default; // 22px
+$h3-font-size:                $font-size-base * 1.286 !default; // 18px
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
@@ -298,8 +305,9 @@ $h6-font-size:                $font-size-base !default;
 $headings-margin-bottom:      ($spacer / 2) !default;
 $headings-font-family:        inherit !default;
 $headings-font-weight:        500 !default;
+$headings-font-weight-light:  300 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-color:              $black !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -315,7 +323,10 @@ $display-line-height:         $headings-line-height !default;
 $lead-font-size:              ($font-size-base * 1.25) !default;
 $lead-font-weight:            300 !default;
 
-$small-font-size:             80% !default;
+$small-font-size:             .929em !default; // 13px
+
+$extra-small-font-size:       .786em !default; // 11px
+$extra-small-font-case:       uppercase !default;
 
 $text-muted:                  $gray-600 !default;
 
@@ -376,8 +387,8 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         0 !default;
+$input-btn-padding-x:         .9375rem !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
 
@@ -385,8 +396,8 @@ $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
 
-$input-btn-padding-y-sm:      .25rem !default;
-$input-btn-padding-x-sm:      .5rem !default;
+$input-btn-padding-y-sm:      0 !default;
+$input-btn-padding-x-sm:      .75rem !default;
 $input-btn-font-size-sm:      $font-size-sm !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 
@@ -404,13 +415,15 @@ $input-btn-border-width:      $border-width !default;
 
 $btn-padding-y:               $input-btn-padding-y !default;
 $btn-padding-x:               $input-btn-padding-x !default;
-$btn-font-size:               $input-btn-font-size !default;
-$btn-line-height:             $input-btn-line-height !default;
+$btn-font-size:               13px !default;
+$btn-line-height:             28px !default;
+$btn-primary-min-width:       70px !default;
+$btn-primary-sm-min-width:    60px !default;
 
 $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
 $btn-padding-x-sm:            $input-btn-padding-x-sm !default;
-$btn-font-size-sm:            $input-btn-font-size-sm !default;
-$btn-line-height-sm:          $input-btn-line-height-sm !default;
+$btn-font-size-sm:            .75rem !default;
+$btn-line-height-sm:          22px !default;
 
 $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
@@ -431,9 +444,9 @@ $btn-link-disabled-color:     $gray-600 !default;
 $btn-block-spacing-y:         .5rem !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:           $border-radius !default;
+$btn-border-radius:           3px !default;
 $btn-border-radius-lg:        $border-radius-lg !default;
-$btn-border-radius-sm:        $border-radius-sm !default;
+$btn-border-radius-sm:        2px !default;
 
 $btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
 
@@ -645,29 +658,31 @@ $form-feedback-icon-invalid:        str-replace(url("data:image/svg+xml,%3csvg x
 //
 // Dropdown menu container and contents.
 
-$dropdown-min-width:                10rem !default;
-$dropdown-padding-y:                .5rem !default;
+$dropdown-min-width:                12.5rem !default;
+$dropdown-max-width:                21.875rem !default;
+$dropdown-padding-y:                1.25rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-bg:                       $white !default;
-$dropdown-border-color:             rgba($black, .15) !default;
-$dropdown-border-radius:            $border-radius !default;
+$dropdown-border-color:             #ececec !default;
+$dropdown-border-radius:            .1875rem !default;
 $dropdown-border-width:             $border-width !default;
 $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
 $dropdown-link-color:               $gray-900 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
+$dropdown-link-hover-bg:            #edf7ff !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
-$dropdown-item-padding-y:           .25rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           .3125rem !default;
+$dropdown-item-padding-x:           1.25rem !default;
 
 $dropdown-header-color:             $gray-600 !default;
+$dropdown-header-padding-y:         .3125rem !default;
 
 
 // Z-index master list
@@ -686,24 +701,29 @@ $zindex-tooltip:                    1070 !default;
 
 // Navs
 
-$nav-link-padding-y:                .5rem !default;
+$nav-link-padding-y:                .85rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-disabled-color:           $gray-600 !default;
+$nav-tabs-link-color:               $symp-gray-600 !default;
 
-$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-border-color:             $symp-gray-400 !default;
 $nav-tabs-border-width:             $border-width !default;
 $nav-tabs-border-radius:            $border-radius !default;
+$nav-tabs-link-height:              50px !default;
 $nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color !default;
-$nav-tabs-link-active-color:        $gray-700 !default;
+$nav-tabs-link-color:               $symp-gray-600 !default;
+$nav-tabs-link-active-height:       49px !default;
+$nav-tabs-link-active-color:        $black !default;
 $nav-tabs-link-active-bg:           $body-bg !default;
-$nav-tabs-link-active-border-color: $gray-300 $gray-300 $nav-tabs-link-active-bg !default;
+$nav-tabs-link-active-border-width: $border-width * 2 !default;
+$nav-tabs-link-active-border-color: $blue !default;
 
 $nav-pills-border-radius:           $border-radius !default;
 $nav-pills-link-active-color:       $component-active-color !default;
 $nav-pills-link-active-bg:          $component-active-bg !default;
 
 $nav-divider-color:                 $gray-200 !default;
-$nav-divider-margin-y:              ($spacer / 2) !default;
+$nav-divider-margin-y:              .9375rem !default;
 
 
 // Navbar
@@ -801,7 +821,7 @@ $jumbotron-bg:                      $gray-200 !default;
 
 $card-spacer-y:                     .75rem !default;
 $card-spacer-x:                     1.25rem !default;
-$card-padding:                      1.429em !default;
+$card-padding:                      $spacer !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                .35rem !default;
 $card-border-color:                 $symp-card-border-color !default;
@@ -873,11 +893,11 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default
 
 // Badges
 
-$badge-font-size:                   75% !default;
+$badge-font-size:                   11px !default;
 $badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
-$badge-padding-x:                   .4em !default;
-$badge-border-radius:               $border-radius !default;
+$badge-padding-y:                   0 !default;
+$badge-padding-x:                   .3125rem !default;
+$badge-border-radius:               2px !default;
 
 $badge-pill-padding-x:              .6em !default;
 // Use a higher than normal value to ensure completely rounded edges when
@@ -928,8 +948,11 @@ $modal-transition:                  transform .3s ease-out !default;
 
 $alert-padding-y:                   .75rem !default;
 $alert-padding-x:                   1.25rem !default;
+$alert-toast-padding-y:             10px !default;
+$alert-toast-padding-x:             20px !default;
 $alert-margin-bottom:               1rem !default;
 $alert-border-radius:               $border-radius !default;
+$alert-toast-border-radius:         .3125rem !default;
 $alert-link-font-weight:            $font-weight-bold !default;
 $alert-border-width:                $border-width !default;
 
