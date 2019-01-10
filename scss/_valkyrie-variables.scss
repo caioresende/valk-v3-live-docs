@@ -1062,7 +1062,7 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 // Icons
 
 $icomoon-font-family: "unicon" !default;
-$icomoon-font-path: "fonts" !default;
+$icomoon-font-path: "../../assets/fonts" !default;
 
 $icn-copy: "\e9c1" !default;
 $icn-announcement: "\e9b6" !default;

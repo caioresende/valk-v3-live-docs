@@ -151,8 +151,6 @@ For example, here are two grid layouts that apply to every device and viewport, 
 {% include example.html content=example %}
 </div>
 
-<span class="icn-info_filled"></span>
-
 Equal-width columns can be broken into multiple lines, but there was a [Safari flexbox bug](https://github.com/philipwalton/flexbugs#flexbug-11) that prevented this from working without an explicit `flex-basis` or `border`. There are workarounds for older browser versions, but they shouldn't be necessary if you're up-to-date.
 
 <div class="bd-example-row">
