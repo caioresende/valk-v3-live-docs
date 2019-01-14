@@ -97,8 +97,8 @@
     _proto.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY);
       this._element = null;
-    } // Private
-    ;
+    }; // Private
+
 
     _proto._getRootElement = function _getRootElement(element) {
       var selector = Util.getSelectorFromElement(element);
@@ -140,8 +140,8 @@
 
     _proto._destroyElement = function _destroyElement(element) {
       $(element).detach().trigger(Event.CLOSED).remove();
-    } // Static
-    ;
+    }; // Static
+
 
     Alert._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
