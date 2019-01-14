@@ -13,9 +13,28 @@ Bootstrap includes several predefined button styles, each serving its own semant
 
 {% capture example %}
 {% for color in site.data.theme-colors %}
-<button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %}
+<!-- <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>{% endfor %} -->
 
-<button type="button" class="btn btn-link">Link</button>
+<!-- <button type="button" class="btn btn-link">Link</button> -->
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-primary"><i class="fa fa-home"></i> Primary</button>
+<button type="button" class="btn btn-primary btn-sm">Primary</button>
+<br/><br/>
+<button type="button" class="btn btn-secondary">Default Secondary State</button>
+<button type="button" class="btn btn-secondary"><i class="fa fa-home"></i> Default Secondary State</button>
+<button type="button" class="btn btn-secondary btn-sm">Default Secondary State</button>
+<br/><br/>
+<button type="button" class="btn btn-alt-secondary">Alt Secondary State</button>
+<button type="button" class="btn btn-alt-secondary"><i class="fa fa-home"></i> Alt Secondary State</button>
+<button type="button" class="btn btn-alt-secondary btn-sm">Alt Secondary State</button>
+<br/><br/>
+<button type="button" class="btn" disabled>Disabled</button>
+<button type="button" class="btn" disabled><i class="fa fa-home"></i> Disabled</button>
+<button type="button" class="btn btn-sm" disabled>Disabled</button>
+<br/><br/>
+<button type="button" class="btn btn-link">Primary Link</button>
+<button type="button" class="btn btn-link secondary-link">Secondary Link</button>
+<button type="button" class="btn btn-link danger-link">Danger Link</button>
 {% endcapture %}
 {% include example.html content=example %}
 

@@ -1,0 +1,74 @@
+.navbar-top {
+
+  .navbar-top-search {
+    width: $top-navbar-search-input-width;
+    height: $top-navbar-search-input-height;
+    @include border-radius($top-navbar-search-border-radius);
+
+    .navbar-top-search-icon {
+      width: $top-navbar-search-icon-width;
+      font-size: $top-navbar-search-icon-size;
+    }
+
+    .search-light {
+      background: $top-navbar-search-light-bg-color;
+
+      &.focused {
+        border: solid $border-width $top-navbar-search-light-border-color-focused;
+      }
+    }
+
+    .search-light-icon {
+      color: $top-navbar-search-light-icon-color;
+
+      &.focused {
+        color: $top-navbar-search-light-icon-color-focused;
+      }
+    }
+
+    .search-dark {
+      background: $top-navbar-search-dark-bg-color;
+    }
+
+    .search-dark-icon {
+      color: $top-navbar-search-dark-icon-color;
+
+      &.focused {
+        color: $top-navbar-search-light-icon-color-focused;
+      }
+
+    }
+  }
+
+  .navbar-top-logo {
+    width: $top-navbar-height;
+    height: $top-navbar-logo-width;
+  }
+
+  .navbar-top-item {
+    font-size: $top-navbar-item-font-size;
+    font-weight: $top-navbar-item-font-weight;
+    color: $top-navbar-item-color;
+    background: $top-navbar-item-bg-color;
+
+    .navbar-top-avatar {
+      height: $top-navbar-item-height;
+      border: solid  $top-navbar-item-border-width $top-navbar-item-border-color;
+    }
+
+    .navbar-top-icon {
+      font-size: $top-navbar-item-icon-size;
+    }
+
+    .no-avatar,
+    .with-notification,
+    .navbar-top-icon {
+      height: $top-navbar-item-height + $top-navbar-item-border-width;
+    }
+
+    &:hover {
+      color: $top-navbar-item-color-hover;
+    }
+
+  }
+}
