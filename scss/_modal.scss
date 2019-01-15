@@ -23,6 +23,7 @@
   left: 0;
   z-index: $zindex-modal;
   display: none;
+  min-height: 660px;
   overflow: hidden;
   // Prevent Chrome on Windows from adding a focus outline. For details, see
   // https://github.com/twbs/bootstrap/pull/10951.
@@ -101,14 +102,19 @@
   display: flex;
   align-items: flex-start; // so the close btn always stays on the upper right corner
   justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
+  min-height: 60px;
+  max-height: 60px;
   padding: $modal-header-padding;
-  border-bottom: $modal-header-border-width solid $modal-header-border-color;
-  @include border-top-radius($modal-content-border-radius);
+  background: $modal-header-bg;
 
   .close {
     padding: $modal-header-padding;
     // auto on the left force icon to the right even when there is no .modal-title
     margin: (-$modal-header-padding-y) (-$modal-header-padding-x) (-$modal-header-padding-y) auto;
+  }
+
+  h3 {
+    font-size: 1.09375rem;
   }
 }
 
@@ -125,7 +131,9 @@
   // Enable `flex-grow: 1` so that the body take up as much space as possible
   // when should there be a fixed height on `.modal-dialog`.
   flex: 1 1 auto;
-  padding: $modal-inner-padding;
+  max-height: calc(100vh - 176px);
+  padding: $modal-body-padding;
+  overflow: auto;
 }
 
 // Footer (for actions)
@@ -133,9 +141,10 @@
   display: flex;
   align-items: center; // vertically center
   justify-content: flex-end; // Right align buttons with flex property because text-align doesn't work on flex items
-  padding: $modal-inner-padding;
-  border-top: $modal-footer-border-width solid $modal-footer-border-color;
-  @include border-bottom-radius($modal-content-border-radius);
+  min-height: 60px;
+  max-height: 60px;
+  padding: $modal-header-padding;
+  background: $modal-footer-bg;
 
   // Easily place margin between footer elements
   > :not(:first-child) { margin-left: .25rem; }
