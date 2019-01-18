@@ -35,15 +35,46 @@ Navbars come with built-in support for a handful of sub-components. Choose from 
 Here's an example of all the sub-components included in a responsive light-themed navbar that automatically collapses at the `lg` (large) breakpoint.
 
 {% capture example %}
-<nav class="navbar-top">
-    <form class="form-inline">
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-  </form>
+<!-- Nanbar Top Light -->
+<nav class="navbar-top navbar-light bg-light d-flex">
+  <div class="navbar-top-logo mr-2">
+    <img src="../../assets/img/school-logo.png" />
+  </div>
+  <div class="navbar-top-search search-light mr-auto">
+      <div class="navbar-top-search-icon icn-search search-light-icon px-2"></div>
+      <input type="text" aria-label="Search">
+      <div class="navbar-top-search-icon icn-close search-light-icon px-2"></div>
+  </div>
+  <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon icn-alarm"></div>
+  </div>
+  <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon no-avatar">99+</div>
+  </div>
+  <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon no-avatar">AE</div>
+  </div>
+</nav>
+
+<!-- Nanbar Top Dark -->
+<nav class="navbar-top navbar-dark bg-dark d-flex">
+  <div class="navbar-top-logo mr-2">
+    <img src="../../assets/img/school-logo.png" />
+  </div>
+  <div class="navbar-top-search search-dark mr-auto">
+      <div class="navbar-top-search-icon icn-search search-dark-icon px-2"></div>
+      <input type="text" aria-label="Search">
+      <div class="navbar-top-search-icon icn-close search-dark-icon px-2"></div>
+  </div>
+  <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon icn-alarm"></div>
+  </div>
+  <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon no-avatar">99+</div>
+  </div>
+  <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon no-avatar">AE</div>
+  </div>
 </nav>
 {% endcapture %}
 {% include example.html content=example %}
