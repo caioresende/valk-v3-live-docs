@@ -65,8 +65,18 @@
     border-radius: $top-navbar-item-border-radius;
 
     .navbar-top-avatar {
+      width: $top-navbar-item-height;
       height: $top-navbar-item-height;
+      overflow: hidden;
       border: solid  $top-navbar-item-border-width $top-navbar-item-border-color;
+      border-radius: $top-navbar-item-border-radius;
+
+      img {
+        display: block;
+        width: $top-navbar-item-height;
+        height: $top-navbar-item-height;
+        margin: 0;
+      }
     }
 
     .navbar-top-icon {

@@ -36,7 +36,7 @@ Here's an example of all the sub-components included in a responsive light-theme
 
 {% capture example %}
 <!-- Nanbar Top Light -->
-<nav class="navbar-top navbar-light bg-light d-flex">
+<nav class="navbar-top navbar-light bg-light d-flex mb-2">
   <div class="navbar-top-logo mr-2">
     <img src="../../assets/img/school-logo.png" />
   </div>
@@ -53,6 +53,11 @@ Here's an example of all the sub-components included in a responsive light-theme
   </div>
   <div class="navbar-top-item mr-2">
     <div class="navbar-top-icon no-avatar">AE</div>
+  </div>
+   <div class="navbar-top-item mr-2">
+    <div class="navbar-top-icon navbar-top-avatar">
+      <img src="../../assets/img/user.jpg">
+    </div>
   </div>
 </nav>
 
