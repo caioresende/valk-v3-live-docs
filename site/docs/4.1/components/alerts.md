@@ -22,6 +22,40 @@ Alerts are available for any length of text, as well as an optional dismiss butt
   Your reservation has been cancelled.<a href="javascript:;">Undo</a>
 </div>
 
+
+<div class="alert alert-success" role="alert">
+  <i class="fa fa-check"></i><b>Success!</b> Action completed successfully - Messages Alert.
+</div>
+
+<div class="alert alert-primary" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <i class="fa fa-info-circle"></i>Be careful what you believe because is that you will experience, Your belief system is a mechanism which is uniquely yours. It is powered by your desire and controlled by your thoughts and actions. In other words, your success is measured by the strength of god.  
+</div>
+
+<div class="alert alert-warning" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <i class="fa fa-exclamation-triangle"></i><b>Warning! Please be careful to proceed the action.</b><br/>
+  Sony Laptops Are Still Part Of The Sony Family.<br/>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-secondary">Secondary</button>
+</div>
+
+<div class="alert alert-danger" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <i class="fas fa-exclamation-circle"></i><b>Error message.</b><br/>
+  <ul>
+    <li>Photographs are a way of preserving a moment in out lives for the rest of our lives.</li>
+    <li>Many of us have at least been tempted at the flashy array of photo printers.</li>
+    <li>if surely seems old fashioned to talk about 35mm film and non-digital cameras in  today's day and non-digital cameras in today's day.</li>
+  </ul>
+</div>
+
 {% capture example %}
 {% for color in site.data.theme-colors %}
 <div class="alert alert-{{ color.name }}" role="alert">

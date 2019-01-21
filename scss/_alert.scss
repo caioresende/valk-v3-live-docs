@@ -4,10 +4,25 @@
 
 .alert {
   position: relative;
-  padding: $alert-padding-y $alert-padding-x;
+  padding: 20px 30px 20px 46px;
   margin-bottom: $alert-margin-bottom;
   border: $alert-border-width solid transparent;
   @include border-radius($alert-border-radius);
+  i {
+    position: absolute;
+    top: 23px;
+    left: 20px;
+    font-size: 1rem;
+  }
+  .close {
+    margin-right: -10px;
+  }
+  .btn-secondary {
+    margin-top: 10px;
+  }
+  ul {
+    padding-left: 18px;
+  }
 }
 
 .toast {
@@ -27,6 +42,9 @@
     @include alert-variant(#555555, #555555, $white);
   }
   .fa {
+    position: relative;
+    top: 0;
+    left: 0;
     margin-right: $alert-toast-padding-y;
   }
   a {
@@ -74,4 +92,23 @@
   .alert-#{$color} {
     @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
   }
+}
+
+//Custom Styles
+
+.alert-success {
+  color: #297848;
+  background: #d2f5e0;
+}
+.alert-primary {
+  color: #0d6dc1;
+  background: #e1f1ff;
+}
+.alert-warning {
+  color: #a85502;
+  background: #feebc9;
+}
+.alert-danger {
+  color: #bf3e24;
+  background: #ffe9e4;
 }
