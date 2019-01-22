@@ -108,9 +108,11 @@
   background: $modal-header-bg;
 
   .close {
-    padding: $modal-header-padding;
+    float: right;
+    width: 24px;
+    height: 24px;
     // auto on the left force icon to the right even when there is no .modal-title
-    margin: (-$modal-header-padding-y) (-$modal-header-padding-x) (-$modal-header-padding-y) auto;
+    margin: 0 0 (-$modal-header-padding-y) auto;
   }
 
   h3 {
