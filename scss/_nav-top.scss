@@ -1,21 +1,47 @@
 .navbar-top {
+  display: flex;
+  align-items: center;
 
   .navbar-top-search {
+    display: flex;
+    align-items: center;
     width: $top-navbar-search-input-width;
     height: $top-navbar-search-input-height;
+    background: $white;
     @include border-radius($top-navbar-search-border-radius);
 
-    .navbar-top-search-icon {
-      width: $top-navbar-search-icon-width;
-      font-size: $top-navbar-search-icon-size;
+    input {
+      flex: 1 0 0;
+      background: none;
+      border: none;
+      outline: none;
     }
 
-    .search-light {
-      background: $top-navbar-search-light-bg-color;
+    .navbar-top-search-icon {
+      flex: 0 0 $top-navbar-search-icon-width;
+      font-size: $top-navbar-search-icon-size;
+    }
+  }
 
-      &.focused {
-        border: solid $border-width $top-navbar-search-light-border-color-focused;
-      }
+  .search-dark {
+    background: $top-navbar-search-dark-bg-color;
+  }
+
+  .search-dark-icon {
+    color: $top-navbar-search-dark-icon-color;
+
+    &.focused {
+      color: $top-navbar-search-light-icon-color-focused;
+    }
+
+  }
+
+  .search-light {
+    background: $top-navbar-search-light-bg-color;
+    border: solid $border-width $top-navbar-search-light-border-color;
+
+    &.focused {
+      border: solid $border-width $top-navbar-search-light-border-color-focused;
     }
 
     .search-light-icon {
@@ -25,45 +51,50 @@
         color: $top-navbar-search-light-icon-color-focused;
       }
     }
-
-    .search-dark {
-      background: $top-navbar-search-dark-bg-color;
-    }
-
-    .search-dark-icon {
-      color: $top-navbar-search-dark-icon-color;
-
-      &.focused {
-        color: $top-navbar-search-light-icon-color-focused;
-      }
-
-    }
   }
 
   .navbar-top-logo {
-    width: $top-navbar-height;
-    height: $top-navbar-logo-width;
+    width: $top-navbar-logo-width;
+    height: $top-navbar-height;
   }
 
   .navbar-top-item {
-    font-size: $top-navbar-item-font-size;
     font-weight: $top-navbar-item-font-weight;
     color: $top-navbar-item-color;
     background: $top-navbar-item-bg-color;
+    border-radius: $top-navbar-item-border-radius;
 
     .navbar-top-avatar {
+      width: $top-navbar-item-height;
       height: $top-navbar-item-height;
+      overflow: hidden;
       border: solid  $top-navbar-item-border-width $top-navbar-item-border-color;
+      border-radius: $top-navbar-item-border-radius;
+
+      img {
+        display: block;
+        width: $top-navbar-item-height;
+        height: $top-navbar-item-height;
+        margin: 0;
+      }
     }
 
     .navbar-top-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-top-icon::before {
       font-size: $top-navbar-item-icon-size;
     }
 
     .no-avatar,
     .with-notification,
     .navbar-top-icon {
+      width: $top-navbar-item-height + $top-navbar-item-border-width;
       height: $top-navbar-item-height + $top-navbar-item-border-width;
+      font-size: $top-navbar-item-font-size;
     }
 
     &:hover {
