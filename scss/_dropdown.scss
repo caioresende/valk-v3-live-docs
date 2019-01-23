@@ -172,6 +172,7 @@
   padding: $dropdown-header-padding-y $dropdown-item-padding-x;
   margin-bottom: 15px; // for use with heading elements
   font-size: $font-size-sm;
+  font-weight: $font-weight-bold;
   color: $dropdown-header-color;
   white-space: nowrap; // as with > li > a
 }
