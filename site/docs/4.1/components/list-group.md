@@ -6,9 +6,79 @@ group: components
 toc: true
 ---
 
-## Basic example
+## Custom Symplicity Example List
 
 The most basic list group is an unordered list with list items and the proper classes. Build upon it with the options that follow, or with your own CSS as needed.
+
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <div class="list-item-logo">
+      <div class="avatar-square">
+        <i class="fa fa-briefcase"></i>
+      </div>
+    </div>
+    <div class="list-item-body">
+      <div class="list-item-title"><h3>Job posting widget</h3><span class="badge badge-secondary">Pending</span></div>
+      <div class="list-item-subtitle">The test sub title</div>
+      <div class="list-data-columns">Additional info goes here..</div>
+    </div>
+    <div class="list-item-actions">
+      <div class="date-action">Jan 19</div>
+      <i class="far fa-star"></i>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="list-item-logo">
+      <div class="avatar-square">
+        <i class="fa fa-briefcase"></i>
+      </div>
+    </div>
+    <div class="list-item-body">
+      <div class="list-item-title"><h3>Job posting widget</h3><span class="badge badge-secondary">Pending</span></div>
+      <div class="list-item-subtitle">The test sub title</div>
+      <div class="list-data-columns">Additional info goes here..</div>
+    </div>
+    <div class="list-item-actions">
+      <div class="date-action">Jan 19</div>
+      <i class="far fa-star"></i>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="list-item-logo">
+      <div class="avatar-square">
+        <i class="fa fa-briefcase"></i>
+      </div>
+    </div>
+    <div class="list-item-body">
+      <div class="list-item-title"><h3>Job posting widget</h3><span class="badge badge-secondary">Pending</span></div>
+      <div class="list-item-subtitle">The test sub title</div>
+      <div class="list-data-columns">Additional info goes here..</div>
+    </div>
+    <div class="list-item-actions">
+      <div class="date-action">Jan 19</div>
+      <i class="far fa-star"></i>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="list-item-logo">
+      <div class="avatar-square">
+        <i class="fa fa-briefcase"></i>
+      </div>
+    </div>
+    <div class="list-item-body">
+      <div class="list-item-title"><h3>Job posting widget</h3><span class="badge badge-secondary">Pending</span></div>
+      <div class="list-item-subtitle">The test sub title</div>
+      <div class="list-data-columns">Additional info goes here..</div>
+    </div>
+    <div class="list-item-actions">
+      <div class="date-action">Jan 19</div>
+      <i class="far fa-star"></i>
+    </div>
+  </li>
+</ul>
+
+
 
 {% capture example %}
 <ul class="list-group">

@@ -5,10 +5,72 @@
 .list-group {
   display: flex;
   flex-direction: column;
-
   // No need to set list-style: none; since .list-group-item is block level
   padding-left: 0; // reset padding because ul and ol
   margin-bottom: 0;
+
+  .list-group-item {
+    padding: 20px;
+    margin-bottom: 0;
+    .list-item-logo {
+      float: left;
+      margin-right: 20px;
+      .avatar-square {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #ececec;
+        border-radius: 5px;
+      }
+    }
+    i {
+      font-size: 30px;
+      line-height: 60px;
+      color: #888;
+    }
+  }
+  .list-item-body {
+    float: left;
+    width: 80%;
+    .list-item-title {
+      margin-bottom: 5px;
+      h3 {
+        display: inline;
+        margin: 0 10px 0 0;
+        font-size: 18px;
+        color: $black;
+      }
+      .badge {
+        vertical-align: middle;
+      }
+    }
+    .list-item-subtitle {
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: $black;
+    }
+    .list-data-columns {
+      margin-bottom: 5px;
+      font-size: 13px;
+      font-weight: lighter;
+      color: $black;
+    }
+  }
+  .list-item-actions {
+    .date-action {
+      margin-bottom: 5px;
+      font-size: 11px;
+      text-align: right;
+      text-transform: uppercase;
+    }
+    i {
+      float: right;
+      font-size: 20px;
+      line-height: inherit;
+    }
+  }
 }
 
 
