@@ -6,6 +6,16 @@ group: components
 toc: true
 ---
 
+## Simplicity Tooltip
+
+<div class="bd-example tooltip-demo">
+
+<!-- <a data-toggle="tooltip" data-placement="top" title="Living in today's metropolitan world of cellular phones, mobile computers and other high-tech gadgets is not ust hectic but very impersonal. We make money and then invest our time and effort in maing more money. Does it end?">Hello</a> -->
+
+<i class="fas fa-search" data-toggle="tooltip" data-placement="top" title="View"></i>
+
+</div>
+
 ## Overview
 
 Things to know when using the tooltip plugin:
