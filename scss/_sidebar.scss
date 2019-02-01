@@ -1,0 +1,33 @@
+.sidebar {
+  padding: $modal-header-padding-x;
+  background: $white;
+  border: 1px solid $symp-card-border-color;
+  border-radius: $border-radius;
+  .list-box {
+    margin-bottom: 10px;
+    .list-title {
+      margin-bottom: 20px;
+      font-weight: $font-weight-bold;
+    }
+    .list-data {
+      margin-bottom: 5px;
+    }
+  }
+  hr {
+    margin: 20px 0;
+    border-top: 1px solid $symp-card-border-color;
+  }
+  ul {
+    margin-left: -37px;
+    list-style: none;
+    .fa,
+    .far {
+      margin-right: 5px;
+    }
+    a {
+      display: block;
+      margin-bottom: 15px;
+      color: $black;
+    }
+  }
+}
