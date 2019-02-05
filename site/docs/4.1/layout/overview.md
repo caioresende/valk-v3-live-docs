@@ -7,9 +7,43 @@ redirect_from: "/docs/4.1/layout/"
 toc: true
 ---
 
-## Containers
+## Symplicity Sidebar
 
-Containers are the most basic layout element in Bootstrap and are **required when using our default grid system**. Choose from a responsive, fixed-width container (meaning its `max-width` changes at each breakpoint) or fluid-width (meaning it's `100%` wide all the time).
+<div class="sidebar col-4">
+    <div class="list-box">
+      <div class="list-title">Important Days</div>
+      <div class="list-data">Posted On:</div>
+      <div class="list-data">07-11-2019</div>
+    </div>
+    <div class="list-box">
+      <div class="list-data">Expires On:</div>
+      <div class="list-data">10-11-2019</div>
+    </div>
+    <hr/>
+    <div class="list-box">
+      <div class="list-title">Related Resources</div>
+      <ul>
+        <li><a href="javascript:;"><i class="fa fa-search"></i>Information sessions</a></li>
+        <li><a href="javascript:;"><i class="fa fa-search"></i>Resume builder</a></li>
+        <li><a href="javascript:;"><i class="fa fa-search"></i>Contact career service</a></li>
+      </ul>
+    </div>
+    <hr/>
+    <div class="list-box">
+      <div class="list-title">Related Resources</div>
+      <ul>
+        <li><a href="javascript:;"><i class="far fa-comments"></i>Chat with advisor</a></li>
+        <li><a href="javascript:;"><i class="far fa-envelope"></i>Send question or comment</a></li>
+      </ul>
+    </div>
+    <hr/>
+    <div class="list-box">
+      <div class="list-title">Text paragraph</div>
+      <p>If you are a serious astranomy fanatic like a lot of us are, you can probably remember that one event in childhood that started you along this exciting hobby. It might have been that first time you looked through a telescope.</p>
+    </div>
+</div>
+
+<br/><br/>Containers are the most basic layout element in Bootstrap and are **required when using our default grid system**. Choose from a responsive, fixed-width container (meaning its `max-width` changes at each breakpoint) or fluid-width (meaning it's `100%` wide all the time).
 
 While containers *can* be nested, most layouts do not require a nested container.
 
