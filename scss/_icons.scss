@@ -20,6 +20,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icn-bar_chart_horizontal {
+  &::before {
+    content: $icn-bar_chart_horizontal;
+  }
+}
+
+.icn-donut {
+  &::before {
+    content: $icn-donut;
+  }
+}
+
+.icn-bar_chart_vertical {
+  &::before {
+    content: $icn-bar_chart_vertical;
+  }
+}
+
+.icn-globe {
+  &::before {
+    content: $icn-globe;
+  }
+}
+
+.icn-infinity {
+  &::before {
+    content: $icn-infinity;
+  }
+}
+
 .icn-copy {
   &::before {
     content: $icn-copy;
@@ -709,6 +739,7 @@
     content: $icn-gear;
   }
 }
+
 .icn-global_time {
   &::before {
     content: $icn-global_time;
@@ -1195,3 +1226,8 @@
   }
 }
 
+.icn-kiosk-2 {
+  &::before {
+    content: $icn-kiosk-2;
+  }
+}
