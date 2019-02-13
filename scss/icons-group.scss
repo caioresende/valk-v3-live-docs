@@ -1,0 +1,6 @@
+.icons-group {
+  display: inline;
+  color: $icons-group-icon-color;
+  background-color: $icons-group-bg-color;
+  @include border-radius($icons-group-border-radius);
+}
