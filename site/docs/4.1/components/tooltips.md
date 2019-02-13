@@ -9,11 +9,16 @@ toc: true
 ## Simplicity Tooltip
 
 <div class="bd-example tooltip-demo">
-
-<!-- <a data-toggle="tooltip" data-placement="top" title="Living in today's metropolitan world of cellular phones, mobile computers and other high-tech gadgets is not ust hectic but very impersonal. We make money and then invest our time and effort in maing more money. Does it end?">Hello</a> -->
-
-<i class="fas fa-search" data-toggle="tooltip" data-placement="top" title="View"></i>
-
+  <i class="fas fa-search" data-toggle="tooltip" data-container="body" data-placement="top" title="View"></i> Top
+</div>
+<div class="bd-example tooltip-demo">
+  <i class="fas fa-search" data-toggle="tooltip" data-placement="bottom" title="View"></i> Bottom
+</div>
+<div class="bd-example tooltip-demo">
+  <i class="fas fa-search" data-toggle="tooltip" data-placement="left" title="View"></i> Left
+</div>
+<div class="bd-example tooltip-demo">
+  <i class="fas fa-search" data-toggle="tooltip" data-placement="right" title="View"></i> Right
 </div>
 
 ## Overview

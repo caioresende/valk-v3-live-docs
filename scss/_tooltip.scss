@@ -107,6 +107,7 @@
 // Wrapper for the tooltip content
 .tooltip-inner {
   max-width: $tooltip-max-width;
+  height: 20px;
   padding: $tooltip-padding-y $tooltip-padding-x;
   font-size: 11px;
   line-height: 20px;
