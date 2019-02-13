@@ -9,3 +9,15 @@
     }
   }
 }
+
+@mixin badge-ghost-variant($color) {
+  color: $color;
+  border-color: $color;
+
+  @at-root a#{&} {
+    @include hover-focus {
+      color: darken($color, 10%);
+      border-color: darken($color, 10%);
+    }
+  }
+}

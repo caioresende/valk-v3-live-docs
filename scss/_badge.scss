@@ -27,6 +27,12 @@
   }
 }
 
+.badge-ghost {
+  background-color: transparent;
+  border-style: solid;
+  border-width: $border-width;
+}
+
 // Quick fix for badges in buttons
 .btn .badge {
   position: relative;
@@ -58,4 +64,12 @@
 }
 .badge-secondary {
   @include badge-variant(#D6820E);
+}
+
+.badge-ghost-primary {
+  @include badge-ghost-variant(#7e7e7e);
+}
+
+.badge-ghost-secondary {
+  @include badge-ghost-variant(#D6820E);
 }
