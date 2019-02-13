@@ -7,17 +7,28 @@
 
 [class^="icn-"],
 [class*=" icn-"] {
+  padding: 2px;
   font-family: "#{$icomoon-font-family}";
   speak: none;
+  font-size: 20px;
   font-style: 500;
   font-weight: 500;
   font-variant: 500;
   line-height: 1;
+  color: #949494;
   text-transform: none;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &:hover,
+  &:focus {
+    color: #6c6c6c;
+  }
+  &.icn-small {
+    padding: 0;
+    font-size: 20px;
+  }
 }
 
 .icn-bar_chart_horizontal {
