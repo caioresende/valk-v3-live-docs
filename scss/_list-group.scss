@@ -10,32 +10,46 @@
   margin-bottom: 0;
 
   .list-group-item {
-    padding: 20px;
+    padding: $list-group-padding;
     margin-bottom: 0;
     .list-item-logo {
       float: left;
-      margin-right: 20px;
+      margin-right: $list-group-margin;
       .avatar-square {
         display: inline-block;
-        width: 60px;
-        height: 60px;
-        line-height: 60px;
+        width: $list-group-icon-web;
+        height: $list-group-icon-web;
+        line-height: $list-group-icon-web;
         text-align: center;
         background: #ececec;
         border-radius: 5px;
       }
+      @include media-breakpoint-up(sm) {
+        .avatar-square {
+          width: $list-group-icon-mob;
+          height: $list-group-icon-mob;
+          line-height: $list-group-icon-mob;
+        }
+      }
     }
     i {
       font-size: 30px;
-      line-height: 60px;
+      line-height: $list-group-icon-web;
       color: #888;
+    }
+    @include media-breakpoint-up(sm) {
+      i {
+        font-size: 30px;
+        line-height: $list-group-icon-mob;
+        color: #888;
+      }
     }
   }
   .list-item-body {
     float: left;
     width: 80%;
     .list-item-title {
-      margin-bottom: 5px;
+      margin-top: 5px;
       h3 {
         display: inline;
         margin: 0 10px 0 0;
@@ -47,12 +61,12 @@
       }
     }
     .list-item-subtitle {
-      margin-bottom: 5px;
+      margin-top: 5px;
       font-size: 14px;
       color: $black;
     }
     .list-data-columns {
-      margin-bottom: 5px;
+      margin-top: 5px;
       font-size: 13px;
       font-weight: lighter;
       color: $black;
