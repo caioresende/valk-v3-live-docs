@@ -34,18 +34,46 @@
   border-radius: $alert-toast-border-radius;
   &.alert-danger {
     @include alert-variant(#bf3e24, #bf3e24, $white);
+    padding-left: 45px;
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-family: "#{$icomoon-font-family}";
+      speak: none;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      line-height: 1;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\e936";
+    }
   }
   &.alert-success {
     @include alert-variant(#297848, #297848, $white);
+    padding-left: 45px;
+    &::before {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-family: "#{$icomoon-font-family}";
+      speak: none;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      line-height: 1;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\e91a";
+    }
   }
   &.alert-neutral {
     @include alert-variant(#555555, #555555, $white);
-  }
-  .fa {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-right: $alert-toast-padding-y;
   }
   a {
     margin-left: 50px;
@@ -99,16 +127,80 @@
 .alert-success {
   color: #297848;
   background: #d2f5e0;
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "#{$icomoon-font-family}";
+    speak: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e91a";
+  }
 }
 .alert-primary {
   color: #0d6dc1;
   background: #e1f1ff;
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "#{$icomoon-font-family}";
+    speak: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e9bc";
+  }
 }
 .alert-warning {
   color: #a85502;
   background: #feebc9;
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "#{$icomoon-font-family}";
+    speak: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e9c2";
+  }
 }
 .alert-danger {
   color: #bf3e24;
   background: #ffe9e4;
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: "#{$icomoon-font-family}";
+    speak: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e936";
+  }
 }
